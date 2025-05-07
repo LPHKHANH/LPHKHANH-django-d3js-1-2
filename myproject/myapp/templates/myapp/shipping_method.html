@@ -1,0 +1,17 @@
+{% extends 'myapp/layout.html' %}
+{% load static %}
+
+{% block title %}2.2. Phân phối theo phương thức - Phân tích doanh số{% endblock %}
+
+{% block page_title %}2.2. Phân phối theo phương thức{% endblock %}
+
+{% block content %}
+<div class="chart-container">
+    <h2>Mức độ phổ biến của từng phương thức giao hàng</h2>
+    <div id="chart13"></div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{% static 'js/charts/chart13.js' %}"></script>
+{% endblock %}

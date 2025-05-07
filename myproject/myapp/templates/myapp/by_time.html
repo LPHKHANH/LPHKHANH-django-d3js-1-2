@@ -1,0 +1,34 @@
+{% extends 'myapp/layout.html' %}
+{% load static %}
+
+{% block title %}1.2. Theo thời gian - Phân tích doanh số{% endblock %}
+
+{% block page_title %}1.2. Theo thời gian{% endblock %}
+
+{% block content %}
+<div class="chart-container">
+    <h2>Doanh số theo tháng</h2>
+    <div id="chart4"></div>
+</div>
+
+<div class="row">
+    <div class="col">
+        <div class="chart-container">
+            <h2>Doanh số theo quý</h2>
+            <div id="chart5"></div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="chart-container">
+            <h2>Doanh số theo năm</h2>
+            <div id="chart6"></div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{% static 'js/charts/chart4.js' %}"></script>
+<script src="{% static 'js/charts/chart5.js' %}"></script>
+<script src="{% static 'js/charts/chart6.js' %}"></script>
+{% endblock %}

@@ -1,0 +1,28 @@
+{% extends 'myapp/layout.html' %}
+{% load static %}
+
+{% block title %}1.4. Theo danh mục sản phẩm - Phân tích doanh số{% endblock %}
+
+{% block page_title %}1.4. Theo danh mục sản phẩm{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col">
+        <div class="chart-container">
+            <h2>Doanh số theo danh mục (Category)</h2>
+            <div id="chart10"></div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="chart-container">
+            <h2>Doanh số theo danh mục phụ (Sub-Category)</h2>
+            <div id="chart11"></div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{% static 'js/charts/chart10.js' %}"></script>
+<script src="{% static 'js/charts/chart11.js' %}"></script>
+{% endblock %}

@@ -1,0 +1,29 @@
+{% extends 'myapp/layout.html' %}
+{% load static %}
+
+{% block title %}Dashboard - Phân tích doanh số{% endblock %}
+
+{% block page_title %}Dashboard - Phân tích doanh số{% endblock %}
+
+{% block content %}
+<div class="dashboard-welcome">
+    <h2>Chào mừng đến với Hệ thống Phân tích Doanh số</h2>
+    <p>Hệ thống này cung cấp các biểu đồ phân tích doanh số theo nhiều khía cạnh khác nhau. Vui lòng chọn một trong các mục trên để xem các biểu đồ tương ứng.</p>
+    <p>Bạn có thể xem doanh số theo thời gian, theo vùng, theo danh mục sản phẩm, hoặc thông tin về vận chuyển.</p>
+</div>
+
+<div class="row">
+    <div class="col">
+        <div class="chart-container">
+            <h2>Phân tích doanh số</h2>
+            <p>Hệ thống cung cấp các biểu đồ phân tích chi tiết về doanh số bán hàng, giúp bạn hiểu rõ hơn về hiệu suất kinh doanh. Sử dụng các nút điều hướng phía trên để truy cập các báo cáo khác nhau.</p>
+        </div>
+    </div>
+    <div class="col">
+        <div class="chart-container">
+            <h2>Phân tích vận chuyển</h2>
+            <p>Xem thông tin chi tiết về thời gian vận chuyển và phân phối theo phương thức giao hàng. Các phân tích này giúp tối ưu hóa quy trình logistics và cải thiện trải nghiệm khách hàng.</p>
+        </div>
+    </div>
+</div>
+{% endblock %}

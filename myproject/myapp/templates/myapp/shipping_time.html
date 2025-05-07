@@ -1,0 +1,17 @@
+{% extends 'myapp/layout.html' %}
+{% load static %}
+
+{% block title %}2.1. Thời gian vận chuyển - Phân tích doanh số{% endblock %}
+
+{% block page_title %}2.1. Thời gian vận chuyển{% endblock %}
+
+{% block content %}
+<div class="chart-container">
+    <h2>Thời gian vận chuyển theo các phương thức giao hàng</h2>
+    <div id="chart12"></div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{% static 'js/charts/chart12.js' %}"></script>
+{% endblock %}
