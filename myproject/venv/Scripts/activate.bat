@@ -8,7 +8,7 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
-set VIRTUAL_ENV=C:\Users\ACER\Thư mục mới\myproject\venv
+set VIRTUAL_ENV=C:\Users\ACER\Django + D3.js 1-2\myproject\venv
 
 if not defined PROMPT set PROMPT=$P$G
 
